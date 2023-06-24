@@ -3,8 +3,8 @@
 ```
 sudo apt-get update
 sudo apt-get install build-essential linux-headers-$(uname -r)
-git clone git://kernel.ubuntu.com/ubuntu/ubuntu-xenial.git
-#sudo apt source linux-source
+wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.35.tar.xz
+tar -xvf linux-6.1.35.tar.xz
 ```
 If you find error in downloading sources due to `Public key not found`, then find the line which says
 ```
