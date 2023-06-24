@@ -3,7 +3,7 @@
 ```
 sudo apt-get update
 sudo apt-get install build-essential linux-headers-$(uname -r)
-sudo apt-get source linux-image-unsigned-$(uname -r)
+git clone git://kernel.ubuntu.com/ubuntu/ubuntu-xenial.git
 #sudo apt source linux-source
 ```
 If you find error in downloading sources due to `Public key not found`, then find the line which says
