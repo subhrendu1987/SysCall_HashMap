@@ -1,4 +1,7 @@
 # SysCall_HashMap
+## Prepare environment
+
+## Hashmap in Kernel Space and store in `/proc/hashmap`
 Add a new system call which can create a hashmap in the kernel space.
 1. Define the syscall number: Add the following line to `arch/x86/entry/syscalls/syscall_64.tbl`:
    ```
