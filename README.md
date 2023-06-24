@@ -1,5 +1,18 @@
 # SysCall_HashMap
 ## Prepare environment
+```
+sudo apt-get update
+sudo apt-get install build-essential linux-headers-$(uname -r)
+sudo apt source linux-source
+```
+If you find error in downloading sources due to `Public key not found`, then find the line which says
+```
+gpgv: Signature made Friday 16 April 2021 03:19:39 PM IST using RSA key ID XXXXXXX
+```
+Now downlaod a trusted key with:
+```
+gpg --keyserver keyserver.ubuntu.com --recv-keys XXXXXXX
+```
 
 ## Hashmap in Kernel Space and store in `/proc/hashmap`
 Add a new system call which can create a hashmap in the kernel space.
