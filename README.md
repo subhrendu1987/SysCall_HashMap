@@ -3,7 +3,8 @@
 ```
 sudo apt-get update
 sudo apt-get install build-essential linux-headers-$(uname -r)
-sudo apt source linux-source
+sudo apt-get source linux-image-unsigned-$(uname -r)
+#sudo apt source linux-source
 ```
 If you find error in downloading sources due to `Public key not found`, then find the line which says
 ```
