@@ -3,7 +3,7 @@
 ```
 sudo apt-get update
 sudo apt-get install build-essential linux-headers-$(uname -r)
-sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison
+sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison zstd dwarves
 apt source linux-image-unsigned-5.15.0-46-generic
 
 wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.35.tar.xz
