@@ -26,7 +26,7 @@ gpg --keyserver keyserver.ubuntu.com --recv-keys XXXXXXX
 Add a new system call which can create a hashmap in the kernel space.
 1. Define the syscall number: Add the following line to `arch/x86/entry/syscalls/syscall_64.tbl`:
    ```
-   <syscall_number>    64    <syscall_name>    __x64_sys_<syscall_name>
+   <syscall_number>    64    sys_store_hashmap    __x64_sys_store_hashmap
    ```
 1. Add a Makefile entry: Modify the Makefile in the kernel source directory and add the following line:
    ```

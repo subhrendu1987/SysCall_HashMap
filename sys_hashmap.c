@@ -28,7 +28,7 @@ static const struct file_operations hashmap_proc_fops = {
     .release = single_release,
 };
 
-asmlinkage long sys_<syscall_name>(unsigned int size)
+asmlinkage long sys_store_hashmap(unsigned int size)
 {
     // Create the hashmap
     map = hashmap_new(size, GFP_KERNEL);
